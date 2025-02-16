@@ -48,6 +48,9 @@ function WMSD_extra_multipliers() {
     if (game.heirlooms.Staff.SeedDrop.currentBonus > 0) {
       multiplier *= (1 + (scaleHeirloomModUniverse("Staff", "SeedDrop", game.heirlooms.Staff.SeedDrop.currentBonus) / 100));
     }
+    if u2SpireBonuses.seedDrop() > 1 {
+        multiplier *= u2SpireBonuses.seedDrop();
+    }
     return multiplier;
 }
 
