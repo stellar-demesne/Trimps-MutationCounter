@@ -190,7 +190,7 @@ function WMSD_make_box_for_mutated_seed_info() {
     let chosen_colours = (game.options.menu.darkTheme.enabled == 2) ? darkmode_colours : standard_colours
     containerMutSeedInfo.setAttribute('style', 'display: block; position: absolute; top: 0; width: 28%; font-size: 0.7em; text-align: center;' + chosen_colours);
     containerMutSeedInfo.setAttribute('class', 'noselect');;
-    containerMutSeedInfo.setAttribute('onmouseover', WMSD_make_tooltip());
+    // containerMutSeedInfo.setAttribute('onmouseover', WMSD_make_tooltip()); // oop it verry borke, before. my bad.
     containerMutSeedInfo.setAttribute('onmouseout', 'tooltip("hide")');
 
     const textareaMutSeedInfo = document.createElement('SPAN');
