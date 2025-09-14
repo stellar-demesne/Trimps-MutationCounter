@@ -95,7 +95,7 @@ function WMSD_total_seeds() {
             }
             if (cell_mutations.length > 0) {
                 seedtotal += WMSD_seeds_from(cell_mutations);
-                if (game.global.gridArray[indice].maxHealth === -1) {
+                if (indice > game.global.lastClearedCell) {
                     remaining_seeds += WMSD_seeds_from(cell_mutations);
                 }
             }
